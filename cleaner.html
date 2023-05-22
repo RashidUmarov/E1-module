@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML tools</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cleaner.css">
+</head>
+<body>
+<div class="header">
+    <div class="inner-header">
+        <div class="logo-container">
+            <h1>HTML tools</h1>
+        </div>
+        <ul class="navigation">
+            <a href="main.html">
+                <li>Главная</li>
+            </a>
+            <a href="about.html">
+                <li>Обо мне</li>
+            </a>
+            <a href="slider.html">
+                <li>Слайдер</li>
+            </a>
+            <a href="svg.html">
+                <li>SVG</li>
+            </a>
+            <a href="#">
+                <li>HTML</li>
+            </a>
+            <a href="contacts.html">
+                <li>Обратная связь</li>
+            </a>
+        </ul>
+    </div>
+</div>
+<h2> HTML Cleaner</h2>
+<div class="html_container">
+    <div id="sidebar">
+        <div id="sidebar_container">
+            <button id="btn-check" class="btn-clean">
+            <div class="btn_text">Check HTML</div>
+
+
+            </button>
+            <div id="check">
+<!--                 здесь будет помещен результат проверки по кнопке id="btn-check"  -->
+            </div>
+
+<!--             этот блок будет показан, если в html найдены пустые теги -->
+            <div id="clean-block">
+                <button id="clean-span" class="btn-clean" onclick="deleteEmptySpans()">
+                <div class="btn_text">span delete</div>
+                </button>
+
+                <button id="clean-div" class="btn-clean" onclick="deleteEmptyDivs()">
+                <div class="btn_text">div delete</div>
+                </button>
+
+            </div>
+        </div>
+    </div>
+    <div id="cleaner_container">
+        <textarea id="editor" placeholder="insert HTML" color="black" class="editor"></textarea>
+    </div>
+
+</div>
+<script src="cleaner.js"></script>
+</body>
+</html>

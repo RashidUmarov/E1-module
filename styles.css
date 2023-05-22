@@ -1,5 +1,5 @@
 .header {
-    background:  #101010;
+    background: #101010;
     padding: 10px 0px 10px 40px;
 }
 
@@ -38,13 +38,79 @@
     color: #101010;
 }
 
-.content{
-    #margin-left: 40px;
+.content {
+    /*margin-left: 40px;*/
     font-size: 16px;
 }
 
-.leftimg{
-    float:left;
+.leftimg {
+    float: left;
     padding-right: 30px;
     margin-left: 40px;
+}
+
+
+.slider {
+    display: flex;
+    justify-content: center;
+}
+
+
+#slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 700px;
+}
+
+
+#image {
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    /*animation: fade 5s linear;*/
+    /*animation-delay: 2.5s;*/
+    /*animation-name: fade;*/
+    /*animation-duration: 3s;*/
+}
+@keyframes fade {
+    0% { opacity: 1 }
+    50% { opacity: 0 }
+    100% { opacity: 1 }
+    /*from {*/
+    /*    opacity: 0.4*/
+    /*}*/
+    /*to {*/
+    /*    opacity: 1*/
+    /*}*/
+}
+
+.change {
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    animation: fade 1s linear;
+    /*animation-delay: 0.1s;*/
+}
+
+.stable {
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    border: 3px solid transparent;
+    border-radius: 10px;
+}
+
+#image:hover {
+    border-color: #60a3ef; /* Цвет рамки */
+    border-radius: 10px;
+}
+
+
+#previous, #next, #image:hover {
+    cursor: pointer;
 }
