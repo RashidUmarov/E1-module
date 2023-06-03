@@ -61,7 +61,7 @@ function getHtmlText(textarea_node, src_list) {
     //console.log("links list:",src_list);
 }
 
-// ищет все src в тегах DIV на обоих панелях
+// ищет все src в тегах IMG на обоих панелях
 function searchImgSrc(){
     left_list=[];
     right_list=[];
@@ -94,7 +94,7 @@ function searchImgSrc(){
 }
 
 
-function repalceSrcInImg(){
+function replaceSrcInImg(){
     if (left_list.length>0){
         let size=Math.min(left_list.length, right_list.length);
     }
