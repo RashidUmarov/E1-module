@@ -5,7 +5,7 @@ let right_html=right_editor.value;
 
 // счетчик для присвоения id спискам, прошедшим через функцию
 let GLOBAL_LIST_COUNTER=0;
-MAX_HEAD_LENGTH=16;
+MAX_HEAD_LENGTH=18;
 
 
 //--- блок div для показа списка найденных заголовков
