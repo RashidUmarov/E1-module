@@ -5,6 +5,7 @@ let right_html=right_editor.value;
 
 // счетчик для присвоения id спискам, прошедшим через функцию
 let GLOBAL_LIST_COUNTER=0;
+MAX_HEAD_LENGTH=16;
 
 
 //--- блок div для показа списка найденных заголовков
@@ -92,7 +93,7 @@ function prepareHeadSets(textarea_node, head_set) {
                 continue;
             }
             // избегаем длинных head
-            if(found[0].trimStart().length>10){
+            if(found[0].trimStart().length>MAX_HEAD_LENGTH){
                 continue;
             }
         console.log(found[0].trimStart());
@@ -238,8 +239,8 @@ function makeNewList(OL_Tag){
             }
             // избегаем длинных head
             console.log(`${current_head}.length = ${current_head.length}`);
-            if(current_head.length>10){
-                console.log(`current_head.length>10`);
+            if(current_head.length>MAX_HEAD_LENGTH){
+                console.log(`current_head.length>MAX_HEAD_LENGTH(${MAX_HEAD_LENGTH})`);
                 li_counter--;
                 continue;
             }
