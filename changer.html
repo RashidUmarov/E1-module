@@ -10,7 +10,7 @@
 <div class="header">
     <div class="inner-header">
         <div class="logo-container">
-            <h1>Change src in IMG</h1>
+            <h1>Change IMG</h1>
         </div>
         <ul class="navigation">
             <a href="index.html">
@@ -45,31 +45,36 @@
 </div>
 <div class="content">
 
-    <h2> Замена ссылок на картинки </h2>
+    <h2> Замена картинок — src, width и height внутри тега img </h2>
     <div class="html_container">
         <div id="left">
             <textarea id="left_html" class="editor" placeholder="insert HTML" color="black"></textarea>
         </div>
         <div id="center">
             <button id="look-img" class="btn-look">
-            <div class="btn_text">Look for img</div>
+                <div class="btn_text">Look for img</div>
 
 
             </button>
             <div id="check">
-<!--                 здесь будет помещен результат проверки по кнопке id="look-img"  -->
+                <!--                 здесь будет помещен результат проверки по кнопке id="look-img"  -->
             </div>
 
-<!--             этот блок будет показан, если в 2-х html будут найдены ссылки на картинки -->
+            <!--             этот блок будет показан, если в 2-х html будут найдены ссылки на картинки -->
             <div id="replace-block">
                 <button id="btn-replace" class="btn-look" onclick="replaceSrcInImg()">
-                <div class="btn_text">Replace SRC</div>
+                    <div class="btn_text">Replace SRC</div>
+                </button>
+            </div>
+            <div id="replace-img-block">
+                <button id="btn-img-replace" class="btn-look-img" onclick="replaceImg()">
+                    <div class="btn_text">Replace SRC + Width + Hight  </div>
                 </button>
             </div>
 
         </div>
         <div id="right">
-            <textarea id="right_html"class="editor" placeholder="insert HTML" color="black"></textarea>
+            <textarea id="right_html" class="editor" placeholder="insert HTML" color="black"></textarea>
         </div>
     </div>
 
