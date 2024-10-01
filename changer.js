@@ -167,7 +167,7 @@ function replaceImg(){
 
          if (attr_name==='width' || attr_name==='height'){
 //            console.log(`  ${img_counter}. src= ${src}:  attr_name=${attr_name}`)
-            let left=left_img_list[img_counter].getAttribute(attr_name);;
+            let left=left_pre_list[img_counter].getAttribute(attr_name);;
             let right=element.getAttribute(attr_name);
             //console.log(attr_name,'  left=',left,'    right=',right)
             if(left != right) {
